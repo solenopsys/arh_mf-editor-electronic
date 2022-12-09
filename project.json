@@ -1,0 +1,94 @@
+{
+  "name": "electronic-alexstorm",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "packages/modules/electronic-alexstorm/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/electronic-alexstorm",
+        "index": "packages/modules/electronic-alexstorm/src/index.html",
+        "main": "packages/modules/electronic-alexstorm/src/main.ts",
+        "polyfills": "packages/modules/electronic-alexstorm/src/polyfills.ts",
+        "tsConfig": "packages/modules/electronic-alexstorm/tsconfig.app.json",
+        "assets": [
+          "packages/modules/electronic-alexstorm/src/favicon.ico",
+          "packages/modules/electronic-alexstorm/src/assets"
+        ],
+        "styles": ["packages/modules/electronic-alexstorm/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "packages/modules/electronic-alexstorm/src/environments/environment.ts",
+              "with": "packages/modules/electronic-alexstorm/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "electronic-alexstorm:build:production"
+        },
+        "development": {
+          "browserTarget": "electronic-alexstorm:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "electronic-alexstorm:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/modules/electronic-alexstorm/**/*.ts",
+          "packages/modules/electronic-alexstorm/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/modules/electronic-alexstorm/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
