@@ -4,7 +4,7 @@ import {ElementViewComponent} from "./element-view/element-view.component";
 import {ElementLayoutComponent} from "./element-layout/element-layout.component";
 import {PartSymbolComponent} from "./part-symbol/part-symbol.component";
 import {ElementModuleComponent} from "./element-module/element-module.component";
-import {DeclaredService} from "@solenopsys/uimatrix-utils";
+import {DeclaredService} from "@solenopsys/ui-utils";
 
 export const SAMSUNG_SCALE = 5.5248;
 
@@ -27,6 +27,6 @@ const components = [
 })
 export class UIElectronicModule {
   constructor(private ds: DeclaredService) {
-    ds.addComps("@solenopsys/uimatrix-editor-electronic", components)
+    ds.addComps("@solenopsys/ui-editor-electronic", components)
   }
 }
