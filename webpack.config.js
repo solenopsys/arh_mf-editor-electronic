@@ -47,7 +47,7 @@ module.exports = {
       name: 'electronic',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/electronic/src/app/remote-entry/entry.module.ts',
+        './Module': 'packages/modules/mf-electronic/src/app/remote-entry/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
