@@ -9,7 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/electronic-richteri",
+        "outputPath": "dist/modules/electronic-richteri",
         "index": "packages/modules/electronic-richteri/src/index.html",
         "main": "packages/modules/electronic-richteri/src/main.ts",
         "polyfills": "packages/modules/electronic-richteri/src/polyfills.ts",
