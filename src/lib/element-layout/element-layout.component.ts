@@ -6,7 +6,7 @@ import { SAMSUNG_SCALE } from "../ui-electronic.module";
 @Component({
   selector: 'ui-element-layout',
   templateUrl: './element-layout.component.html',
-  styleUrls: ['./element-layout.component.css']
+  styleUrls: ['./element-layout.component.scss']
 })
 export class ElementLayoutComponent implements OnInit {
 

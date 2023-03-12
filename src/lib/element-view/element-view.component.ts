@@ -6,7 +6,7 @@ import { SAMSUNG_SCALE } from "../ui-electronic.module";
 @Component({
   selector: 'ui-element-view',
   templateUrl: './element-view.component.html',
-  styleUrls: ['./element-view.component.css']
+  styleUrls: ['./element-view.component.scss']
 })
 export class ElementViewComponent implements OnInit {
   @ViewChild('canvasElement', {static: true})

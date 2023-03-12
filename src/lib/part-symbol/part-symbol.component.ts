@@ -4,7 +4,7 @@ import {drawElem} from '../draw/shematic.draw';
 @Component({
     selector: 'ui-part-symbol',
     templateUrl: './part-symbol.component.html',
-    styleUrls: ['./part-symbol.component.css']
+    styleUrls: ['./part-symbol.component.scss']
 })
 export class PartSymbolComponent implements OnInit, AfterViewInit {
 

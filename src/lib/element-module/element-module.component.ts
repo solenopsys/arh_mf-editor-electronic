@@ -4,7 +4,7 @@ import {drawElem, drawWire, SchemeConf} from '../draw/shematic.draw';
 @Component({
   selector: 'ui-element-module',
   templateUrl: './element-module.component.html',
-  styleUrls: ['./element-module.component.css']
+  styleUrls: ['./element-module.component.scss']
 })
 export class ElementModuleComponent implements OnInit, AfterViewInit {
   @Input()
