@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/mf-electronic",
+  "name": "@solenopsys/ui-editor-electronic",
   "version": "0.1.0",
   "scripts": {
     "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
