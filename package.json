@@ -5,7 +5,6 @@
     "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
   },
   "peerDependencies": {
-    "@solenopsys/ui-utils": "^0.1.0",
-    "@solenopsys/ui-editor-electronic": "^0.1.0"
+    "@solenopsys/ui-utils": "^0.1.0"
   }
 }
