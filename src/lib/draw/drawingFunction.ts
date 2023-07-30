@@ -1,9 +1,9 @@
-export interface Point {
+export type Point ={
   x: number;
   y: number;
 }
 
-export interface Line {
+export type Line = {
   x1: number;
   y1: number;
   x2: number;
@@ -11,14 +11,14 @@ export interface Line {
   width: number;
 }
 
-export interface Rect {
+export type Rect = {
   x: number;
   y: number;
   w: number;
   h: number;
 }
 
-export interface Cicle {
+export type Cicle = {
   x: number;
   y: number;
   radius: number;

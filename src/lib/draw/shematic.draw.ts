@@ -6,7 +6,7 @@ const PIN_LENGTH = 10;
 
 const FIELD_SIZE = 30;
 
-export interface IcInterface {
+export type IcInterface ={
     size: { width: number; height: number };
     pins: {
         sides: { [key: string]: string[] },
@@ -16,12 +16,12 @@ export interface IcInterface {
     symbol?: any[];
 }
 
-export interface Point {
+export type Point = {
     x: number;
     y: number;
 }
 
-export interface SchemeConf {
+export type SchemeConf = {
     width: number;
     height: number;
     elements: { angle: number; position: Point, element: IcInterface }[];
