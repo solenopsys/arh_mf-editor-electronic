@@ -2,7 +2,7 @@
   "name": "@solenopsys/ui-editor-electronic",
   "version": "0.1.0",
   "scripts": {
-    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.packages.json"
+    "build": "vbuild"
   },
   "peerDependencies": {
     "@solenopsys/ui-utils": "^0.1.0"
