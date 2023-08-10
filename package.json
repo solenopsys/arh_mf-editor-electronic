@@ -1,9 +1,10 @@
 {
   "name": "@solenopsys/ui-editor-electronic",
   "version": "0.1.0",
-  "scripts": {
-    "build": "vbuild"
+   "scripts": {
+    "build": "vite build  -c ../../../lib.config.js"
   },
+  "type": "module",
   "peerDependencies": {
     "@solenopsys/ui-utils": "^0.1.0"
   }
